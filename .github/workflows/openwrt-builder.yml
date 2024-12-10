@@ -81,7 +81,7 @@ jobs:
     - name: Download autoconf
       id: autoconf
       run: |
-        cd tmp
+        cd /tmp
         sudo -E apt-get --purge remove autoconf* -y
         wget http://mirrors.kernel.org/ubuntu/pool/main/a/autoconf/autoconf_2.69-11.1_all.deb
         sudo -E apt-get -qq install autoconf_2.69-11.1_all.deb
